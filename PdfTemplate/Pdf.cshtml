@@ -1,0 +1,33 @@
+﻿@model PdfApi.Models.TemplateModel
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+<h1>
+    Hej jag är rubrik, är du?
+</h1>
+
+<p>Mitt namn är @Model.Name</p>
+<style type="text/css">
+
+        body {
+            font-family: Arial;
+        }
+
+        h1 {
+            color: #047364;
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        p {
+            color: red;
+        }
+    </style>
+</body>
+</html>

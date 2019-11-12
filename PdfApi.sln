@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfApi", "PdfApi.csproj", "{01116B8F-47A6-4DCD-ADAD-87C9441525CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01116B8F-47A6-4DCD-ADAD-87C9441525CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01116B8F-47A6-4DCD-ADAD-87C9441525CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01116B8F-47A6-4DCD-ADAD-87C9441525CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01116B8F-47A6-4DCD-ADAD-87C9441525CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {349F37AB-EF7D-40DE-BBA2-BCE8186C0ECB}
+	EndGlobalSection
+EndGlobal
