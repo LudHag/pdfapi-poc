@@ -19,13 +19,8 @@ namespace PdfApi.Services
             _converter = converter;
         }
 
-        public async Task<byte[]> GetStuff()
+        public async Task<byte[]> GetPdf(TemplateModel model)
         {
-            var model = new TemplateModel()
-            {
-                Name = "Ludvig"
-            };
-
             var documentContent = await _templateService.RenderTemplateAsync("~/PdfTemplate/Pdf.cshtml", model);
             var doc = new HtmlToPdfDocument()
             {
