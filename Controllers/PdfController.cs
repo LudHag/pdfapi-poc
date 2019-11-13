@@ -18,8 +18,8 @@ namespace PdfApi.Controllers
         {
             _pdfService = pdfService;
         }
-        [HttpGet]
-        public async Task<FileContentResult> Get()
+        [HttpGet("Dink")]
+        public async Task<FileContentResult> Dink()
         {
             var model = new TemplateModel()
             {
@@ -28,6 +28,18 @@ namespace PdfApi.Controllers
             var pdfArray = await _pdfService.GetPdf(model);
 
             return File(pdfArray, "application/pdf", $"{model.Name}-file.pdf");
+        }
+
+        [HttpGet("Nreco")]
+        public async Task<FileContentResult> Nreco()
+        {
+            var model = new TemplateModel()
+            {
+                Name = "Ludvig"
+            };
+            var pdfArray = await _pdfService.GetPdf(model);
+
+            return File(pdfArray, "application/pdf", $"{model.Name}-nreco-file.pdf");
         }
     }
 }

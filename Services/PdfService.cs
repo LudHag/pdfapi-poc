@@ -42,5 +42,15 @@ namespace PdfApi.Services
 
             return pdf;
         }
+
+        public async Task<byte[]> GetPdfReco(TemplateModel model)
+        {
+            var documentContent = await _templateService.RenderTemplateAsync("~/PdfTemplate/Pdf.cshtml", model);
+
+            var htmlToPdf = new NReco.PdfGenerator.HtmlToPdfConverter();
+            var pdfBytes = htmlToPdf.GeneratePdf(documentContent);
+
+            return pdfBytes;
+        }
     }
 }
